@@ -1,0 +1,35 @@
+import java.util.Scanner;;
+public class alws {
+public static void main (String[] args){
+//Declaration section
+Scanner read = new Scanner (System.in);
+char grade;
+String message;
+    System.out.println("Enter Your Grade : ");
+grade = read.next().charAt(0);
+//processing section
+switch (grade)
+
+    {
+        case 'A' :
+            message = "Excellent";
+            ;
+            break;
+        case 'B' :
+                message = "very Good ";
+            break;
+        case 'C' :
+                message = "Good";
+            break;
+        case 'D' :
+            message = "Fair";
+            break;
+        case 'F':
+            message = "Failed";
+            break;
+        default:
+            message = "The grade is invalid";
+    }
+System.out.println (message);
+}
+}

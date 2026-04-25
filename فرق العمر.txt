@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+int yoar = 2024;
+        int yoar_you,age;
+        int Av;
+        char C;
+        String neam;
+        input = new Scanner(System.in);
+        System.out.print("HLO User \nplease enter Neam:");
+        neam = input.next();
+        System.out.print("please enter your:");
+        yoar_you = input.nextInt();
+        age = yoar - yoar_you;
+        System.out.print("please enter Neam two :");
+        int yoer_the,age2;
+        String neam2;
+        neam2= input.next();
+        System.out.print("please enter your2 :");
+        yoer_the= input.nextInt();
+        age2 = yoar - yoer_the;
+       if(age>age2)
+           System.out.println("the : "+neam +" bigger than : "+neam2);
+       else if (age == age2) {
+           System.out.println("the : "+neam +" Equal To : "+neam2);
+       } else {
+           System.out.println("the : " + neam2 + " bigger than : " + neam);
+       }
+       System.out.println("the : "+neam+" your : "+yoar_you+" = "+age+"\nthe : "+neam2+" your : "+yoer_the+" = "+age2);
+       Av = age-age2;
+
+        System.out.println("avrj = C\t END = 0" );
+        C = input.next().charAt(0);
+if (C == 'C') {
+    if (Av > 0) {
+        System.out.println(" the avrj = " + Av);
+    }
+    else
+       System.out.println(" the avrj = " + (age2 - age));
+
+}
+else
+    System.out.println(" -- END -- ");
+    
+ 
+}
+
+
+    }

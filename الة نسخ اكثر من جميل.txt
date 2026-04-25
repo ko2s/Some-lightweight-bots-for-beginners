@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int contar,nemp;
+        String neam,email="";
+        char cr;
+        System.out.println("Enter the neam");
+        neam = input.next();
+        System.out.println("Enter the namer");
+        nemp = input.nextInt();
+        System.out.println("Enter the email");
+        System.out.println("1 : [yahoo]\t 2 : [hotmail]\t 3 : [gmail]");
+        cr = input.next().charAt(0);
+        switch (cr)
+        {
+
+            case '1' : email = "yahoo.com";
+                break;
+            case '2' : email = "hotmail.com";
+                break;
+            case '3' : email = "gmail.com";
+                break;
+            default:
+                System.out.println("not email");
+        }
+        System.out.println(email);
+        for(contar=1;contar<=nemp;contar++)
+        {
+            System.out.println(neam+contar+"@"+email);
+        }
+    }
+}
